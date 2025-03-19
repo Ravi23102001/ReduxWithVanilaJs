@@ -52,8 +52,14 @@ const reducerBurger=(state=initialStateForBurger, action)=>{
                     ...state,
                     burgerBuns:state.burgerBuns-1
                 }
+                case ORDER_PIZZA:
+                    return{
+                        ...state,
+                        burgerBuns:state.burgerBuns-1
+                    }
         default:
             return state
+            
     }
     }
 
@@ -73,6 +79,7 @@ const unSubscribe=store.subscribe(()=>{})
 
 
 store.dispatch(orderPizza())
+
 store.dispatch(orderPizza())
 store.dispatch(orderPizza())
 

@@ -81,7 +81,6 @@ const fetchProduct = () => {
             .catch(error => {
                 dispatch(fetchError())
             })
-
     }
 }
 //Store
